@@ -1,0 +1,15 @@
+.btn-lg
+ {
+   position:absolute;
+   left: 373px;
+   top: 23px;
+   height: 35px;
+   width: 70px;
+   background-color: #2273EC;
+   border-color: #2273EC;
+   border-radius: 7px;
+   color: #150000;
+   font-weight: bold;
+
+
+ }

@@ -1,0 +1,39 @@
+.col2
+{
+  position:absolute;
+  left: 97px;
+  top:0px;
+  background-color: #DAE2F5;
+  width:246px;
+  height: 1024px;
+}
+.bigcircle
+{
+    position:absolute;
+    width: 237px;
+   height: 237px;
+   border-radius: 100%;
+   left: 6px;
+   top: 4px;
+   background-color:#FFFFFF;
+}
+.png1
+{
+   position: absolute;
+   left:17px;
+   top:25px;
+   width: 212px;
+   height: 189px;
+}
+.mytodofont
+ {
+   font-size: 20px;
+   position:absolute;
+   left: 20px;
+   top:274px;
+   height:auto;
+   width:auto;
+   color: #0B0242;
+   
+
+ }

@@ -1,0 +1,19 @@
+.Alltask
+ {
+   background-color: #3FA3FE;
+   position:absolute;
+   left: 0px;
+   top: 372px;
+   width:246px;
+   height:62px;
+   fill-opacity: 57%;
+
+
+ }
+ .alltaskf{
+   color:#150000be;
+   font-size: 11px;
+   position: absolute;
+   left:20px;
+   top:370px;
+ }
