@@ -1,0 +1,22 @@
+.title{
+    position: absolute;
+    top:120px;
+    left: 380px;
+
+
+}
+
+.title1{
+    position: absolute;
+    top:-1px;
+    left: 235px;
+    color: #0E066C;
+}
+
+.line3{
+    position: absolute;
+    width: 640px;
+    height:3.5px;
+    background-color: #2273EC;
+    filter: blur(2px);
+}
