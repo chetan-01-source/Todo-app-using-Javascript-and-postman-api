@@ -6,9 +6,11 @@ export class Leftpane extends Component {
         return (
             <div className="Leftpane">
                 <div class="col col1">
-                    <div class="circle circle1"></div>
-                    <div class="circle circle2"></div>
-                    <div class="circle circle3"></div>
+                    <div className="circle1"></div>
+                    <div className="circle3"></div>
+                    
+                    
+                    
                     <Addtask/>
 
                 </div>

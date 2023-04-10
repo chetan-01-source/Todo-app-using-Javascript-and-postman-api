@@ -34,18 +34,12 @@ function Cards(title, imageUrl, body) {
                   <div className="box">
                     <h4>{record.time}</h4>
                   </div>
-                  <button type="button" class="btn">
+                  <button type="button" class="btn1">
                   <img src="https://tse1.mm.bing.net/th?id=OIP.jFuS_VOxAU8z7QQRaAWj9AHaHa&pid=Api&P=0" height={11} width ={11}alt='' />
                     Task Completed
                     </button>
 
                 </div>
-
-
-                
-
-
-
               </div>
 
             </div>
