@@ -6,6 +6,7 @@ import './Calender.css';
 function ReactDatepicker () {
     const {selectedDate, setSelectedDate} = useState(null)
     return(
+        <>
         <div className="Calender">
             <DatePicker
             selected ={selectedDate}
@@ -15,8 +16,10 @@ function ReactDatepicker () {
             placeholderText="I have been cleared!"
             />
 
+
         </div>
 
+</>
     )
 }
 export default ReactDatepicker

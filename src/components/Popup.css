@@ -1,0 +1,70 @@
+.press
+{
+    position: absolute;
+    left: 10px;
+    top: 400px;
+}
+
+.form
+{
+    position: absolute;
+    left :302px;
+    top: 38px;
+    width: 750px;
+    height: 589px;
+    background-color: white;
+    border-radius: 41px;
+    border-style: solid;
+    border-color: black;
+}
+
+.form h1{
+    position: absolute;
+    left:49px;
+    top: 24px;
+    font-size: 38px;
+    color: #0B0242;
+    text-shadow: 10px 10px 20px 0px grey;
+}
+
+.linea{
+    position: absolute;
+    left: 49px;
+    top:110px;
+    width:640px;
+    height: 4px;
+    background-color: #2273EC;
+    filter: blur(2px);
+}
+
+.textbox
+{
+    position: absolute;
+    left: 97px;
+    top:252px;
+    width: 60px;
+    height: 20px;
+}
+
+.press1{
+    position: absolute;
+    top: 400px;
+    left: 140px;
+    width: 100px;
+    padding: 10px;
+    background-color:  red;
+    color: white;
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 18px;
+
+}
+
+.text3{
+    position: absolute;
+    left: 65px;
+    top: 190px;
+}
