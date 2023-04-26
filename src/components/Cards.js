@@ -1,24 +1,9 @@
 import React , {Component, useEffect, useState} from 'react'
 import './Cards.css'
 import records from './data.json'
+import axios from 'axios'
 
-function Cards({userData}) {
-
-  const [data, setData] = useState([])
-  useEffect(() => {
-    fetch("http://localhost:5000/addtask" ,{
-      mode: "no-cors",
-      method: "GET",
-    })
-
-    
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data, "userData");
-      setData(data.data);
-    });
-  });
-
+function Cards() {
 
   return (
     <div className="App">
