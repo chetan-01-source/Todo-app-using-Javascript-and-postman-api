@@ -9,9 +9,9 @@ export class Page1 extends Component {
     render() {
         return (
             <div className="page">
-                <div class="font-link" >
-                    <div class="container text-center">
-                        <div class="row align-items-start">
+                <div className="font-link" >
+                    <div className="container text-center">
+                        <div className="row align-items-start">
                             <Leftpane />
                             <Leftpane1 />
                             <div><Rightpane /> </div>

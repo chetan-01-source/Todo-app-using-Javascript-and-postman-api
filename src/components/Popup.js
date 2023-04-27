@@ -50,7 +50,7 @@ function Popup() {
             <div className="linea"></div>
             <div className="text3">
               <form method="POST">
-                <div class="mb-3">
+                <div className="mb-3">
                   <label
                     for="exampleFormControlTextarea1"
                     class="form-label"
@@ -68,14 +68,19 @@ function Popup() {
               </form>
             </div>
             <div className="press1">
-              <button onClick={PostData}>Add</button>
+              <div onClick={PostData}>Add</div>
             </div>
           </div>
         </ModalHeader>
       </Modal>
+      <div className="Addicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#000000" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+        </div>
       <button className="press" onClick={() => setmodal(true)}>
         {" "}
-        Add Task{" "}
+       {" "}
       </button>
     </div>
   );

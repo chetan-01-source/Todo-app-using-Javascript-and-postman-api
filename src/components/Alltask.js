@@ -5,7 +5,7 @@ export class Alltask extends Component {
     render() {
         return (
             <div>
-                <div class="Alltask"></div>
+                <div className="Alltask"></div>
                 <div className="alltaskf">
                     <h1> All Tasks </h1>
                 </div>

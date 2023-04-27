@@ -13,7 +13,7 @@ export class Leftpane1 extends Component {
                 <img src="https://png.pngtree.com/png-vector/20220915/ourmid/pngtree-funny-cartoon-pencil-clipart-png-image_6176072.png" height={189} width={212}></img>
             </div>
           </div>
-          <div class="mytodofont ">
+          <div className="mytodofont ">
             <h1>
               <b>My Todo</b>
             </h1>

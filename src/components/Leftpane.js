@@ -5,13 +5,14 @@ export class Leftpane extends Component {
     render() {
         return (
             <div className="Leftpane">
-                <div class="col col1">
+                <div className="col col1">
                     <div className="circle1"></div>
                     <div className="circle3"></div>
+                    <div className="circle4"></div>
                     
                     
                     
-                    <Addtask/>
+                    
 
                 </div>
 
