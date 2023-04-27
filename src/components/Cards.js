@@ -52,7 +52,10 @@ function Cards()
                     <div className="line1"></div>
                   </h3>
                   <div className="box">
-                    <h4>07:00am</h4>
+                    <h4><tr key={item.id}>
+                      {item.time}
+                      {console.log("data")}
+                    </tr></h4>
                   </div>
                   <button type="button" className="btn1">
                     <img

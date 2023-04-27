@@ -7,9 +7,9 @@
 
 .form
 {
-    position: absolute;
+    position: relative;
     left :400px;
-    top: -600px;
+    top: -40px;
     width: 700px;
     height: 500px;
     background-color: white;
@@ -52,7 +52,7 @@
     left: 132px;
     width: 100px;
     padding: 10px;
-    background-color:  red;
+    background-color:  rgb(245,47,47);
     color: white;
     border: 5px;
     display: flex;
@@ -63,7 +63,9 @@
     cursor: pointer;
 
 }
-
+.press1:hover{
+    background-color: red;
+}
 .text3{
     position: absolute;
     left: 65px;
@@ -93,4 +95,12 @@ padding: 0px;
 font-size: 12px;
 
 opacity: 49%;
+}
+
+.remove{
+
+    position: absolute;
+    top: 13px;
+    left: 660px;
+    cursor: pointer;
 }

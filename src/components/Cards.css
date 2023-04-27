@@ -83,15 +83,15 @@
     position: relative;
     top: 45px;
     left: 5px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     
 }
 
 .btn1{
     position: relative;
     left: 70px;
-    top:-5px;
+    top: -25px;
     background-color: rgb(242, 247, 242);
     border-color:rgb(6, 246, 6) ;
     border-radius: 10px 10px 10px 10px ;

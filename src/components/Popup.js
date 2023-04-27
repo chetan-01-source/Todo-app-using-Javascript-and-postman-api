@@ -6,7 +6,7 @@ function Popup() {
   const [modal, setmodal] = useState(false);
 
   const [user, setUser] = useState({
-    taskname: "",
+    taskname: "", time:"",
   });
 
   let name, value;
@@ -19,10 +19,10 @@ function Popup() {
     console.log({ [name]: value });
   };
 
-  const PostData = async(e) =>{
+  const PostData = async (e) => {
     e.preventDefault();
 
-    const {taskname} = user;
+    const { taskname,time } = user;
 
     const res = await fetch("/addtask", {
 
@@ -33,7 +33,8 @@ function Popup() {
 
       body: JSON.stringify({
 
-        taskname
+        taskname,
+        time
       })
     });
 
@@ -55,7 +56,8 @@ function Popup() {
                     for="exampleFormControlTextarea1"
                     class="form-label"
                   ></label>
-                  <input
+                  <input 
+                  
                     type="text"
                     name="taskname"
                     id="taskname"
@@ -64,25 +66,42 @@ function Popup() {
                     value={user.taskname}
                     onChange={handleInputs}
                   />
+
+                </div>
+                <div>
+                <input 
+                    type="text"
+                    name="time"
+                    id="time"
+                    autoComplete="off"
+                    placeholder="Enter you time"
+                    value={user.time}
+                    onChange={handleInputs}
+                  />
                 </div>
               </form>
             </div>
             <div className="press1">
               <div onClick={PostData}>Add</div>
             </div>
+            <div className="remove" onClick={() =>setmodal(false)}>
+              <img src="https://openclipart.org/image/2400px/svg_to_png/110/molumen-red-square-error-warning-icon.png" width={20} height={20}/>
+            </div>
           </div>
         </ModalHeader>
       </Modal>
       <div className="Addicon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#000000" class="bi bi-plus" viewBox="0 0 16 16">
-                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                    </svg>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#000000" class="bi bi-plus" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg>
+      </div>
       <button className="press" onClick={() => setmodal(true)}>
         {" "}
-       {" "}
+        {" "}
       </button>
+
     </div>
+
   );
 }
 
