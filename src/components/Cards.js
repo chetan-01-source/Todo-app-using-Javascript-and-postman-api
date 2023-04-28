@@ -137,7 +137,9 @@ function Cards() {
                         {console.log("data")}
                       </tr></h4>
                     </div>
-                   
+                    <div className="ico">
+                        <Icon   icon="solar:trash-bin-minimalistic-2-bold-duotone" height={20}  onClick={(e)=>deleteUser(item._id,e)}/>
+                        </div>
                     <div className="img1">
                      <img
                           src="https://th.bing.com/th/id/R.1508c92d3afc128f777898bbc3458750?rik=7lKUai0C1cRc8w&riu=http%3a%2f%2fwww.freepngclipart.com%2fdownload%2fcartoon%2f83069-engineering-engineer-free-clipart-hq.png&ehk=qRr0GGUBD7hFJj%2bqC8amJbf%2btiUlwYraCcji9yZQFvU%3d&risl=&pid=ImgRaw&r=0"
@@ -181,6 +183,9 @@ function Cards() {
                       </h4>
                     </div>
                   </div>
+                  <div className="ico">
+                        <Icon   icon="solar:trash-bin-minimalistic-2-bold-duotone" height={20}  onClick={(e)=>deleteUser(item._id,e)}/>
+                        </div>
 
                   <div className="text1">
                     <h3>
