@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { Component, useEffect, useReducer, useState } from "react";
 import "./Cards.css";
 import records from "./data.json";
 import { Modal, ModalHeader } from "reactstrap";
@@ -6,6 +6,7 @@ import axios, { Axios } from "axios";
 import { Icon } from '@iconify/react';
 
 function Cards() {
+  const [reducerValue, forceUpdate] = useReducer(x=>x+1, 0)
   const [modal, setmodal] = useState(false);
 
   const [data, setData] = useState([]);
@@ -13,20 +14,19 @@ function Cards() {
     const response = await axios.get("http://localhost:5000/gettask");
     setData(response.data);
     console.log(response.data);
+    forceUpdate()
   };
 
   const deleteUser =async(id,e)=>{
     e.preventDefault();
     axios.delete(`http://localhost:5000/del/${id}`)
     .then(res=>console.log("Deleted"))
-
-     
-    
+      
   };
 
   useEffect(() => {
     loaddata();
-  }, []);
+  }, [reducerValue]);
 
   return (
     <>
