@@ -21,6 +21,7 @@ function Cards() {
     e.preventDefault();
     axios.delete(`http://localhost:5000/del/${id}`)
     .then(res=>console.log("Deleted"))
+    forceUpdate()
       
   };
 
