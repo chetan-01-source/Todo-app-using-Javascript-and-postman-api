@@ -2,8 +2,8 @@ import React, { Component, useEffect, useState } from "react";
 import "./Cards.css";
 import records from "./data.json";
 import { Modal, ModalHeader } from "reactstrap";
-import axios from "axios";
-
+import axios, { Axios } from "axios";
+import { Icon } from '@iconify/react';
 
 function Cards() {
   const [modal, setmodal] = useState(false);
@@ -13,6 +13,15 @@ function Cards() {
     const response = await axios.get("http://localhost:5000/gettask");
     setData(response.data);
     console.log(response.data);
+  };
+
+  const deleteUser =async(id,e)=>{
+    e.preventDefault();
+    axios.delete(`http://localhost:5000/del/${id}`)
+    .then(res=>console.log("Deleted"))
+
+     
+    
   };
 
   useEffect(() => {
@@ -41,14 +50,19 @@ function Cards() {
                     <div className="text1-container">
                       <div className="text">
                         <h3>#Task</h3>
+                        
                         <h4>
                           <tr key={item.id}>
                             {index + 1}
                           </tr>
                         </h4>
                       </div>
+                      
                     </div>
-
+                    <div className="ico">
+                        <Icon   icon="solar:trash-bin-minimalistic-2-bold-duotone" height={20}  onClick={(e)=>deleteUser(item._id,e)}/>
+                        </div>
+                    
                     <div className="text1">
                       <h3>
                         <tr key={item.id}>
@@ -72,10 +86,12 @@ function Cards() {
                           alt=""
                         />
                       </div> 
+                      
                      
                      
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </>

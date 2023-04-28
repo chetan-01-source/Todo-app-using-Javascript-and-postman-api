@@ -153,3 +153,9 @@
     
 
 }
+.ico{
+    position: absolute;
+    top: 10px;
+    left: 270px;
+    cursor: pointer;
+}
