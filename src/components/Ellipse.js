@@ -12,6 +12,10 @@ function Ellipse() {
                 <h1></h1>
 
             </div>
+            <div className="circle8">
+                <h1></h1>
+
+            </div>
         </div>
 
 

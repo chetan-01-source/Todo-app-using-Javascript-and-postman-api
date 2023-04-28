@@ -145,3 +145,11 @@
     border-color:rgb(6, 246, 6) ;
     border-radius: 10px 10px 10px 10px ;
 }
+
+.img1{
+    position:absolute;
+    top: 70px;
+    left: 200px;
+    
+
+}

@@ -27,3 +27,17 @@
     
     
   }
+  .circle8{
+    position: absolute;
+    top: 43px;
+    left: 1325px;
+    width: 23px;
+    height: 23px;
+    color: #2273EC;
+    background-color: #2273EC;
+    opacity: 50%;
+    
+    font-size: xx-small;
+    border-radius: 50%;
+    
+  }
