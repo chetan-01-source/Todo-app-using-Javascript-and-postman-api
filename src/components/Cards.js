@@ -42,7 +42,7 @@ function Cards() {
     var a= window.confirm("do you want to delete all task?")
     if(a){
       
-      axios.delete(`http://localhost:5000/deleteall`)
+      axios.delete("http://localhost:5000/deleteall")
       
       
       alert("all task has been deleted")
@@ -52,7 +52,6 @@ function Cards() {
         alert("tasks are not deleted")
     }
     
-      
   };
 
   useEffect(() => {
