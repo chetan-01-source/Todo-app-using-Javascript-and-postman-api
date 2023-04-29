@@ -159,3 +159,44 @@
     left: 270px;
     cursor: pointer;
 }
+.ico1{
+    position: absolute;
+    top: -40px;
+    left: 250px;
+    cursor: pointer;
+}
+
+.ico2{
+    position: absolute;
+    top: -288px;
+    left: 130px;
+}
+
+.App1 .text h3{
+    color: rgb(25, 209, 25);
+}
+
+.App1 .text h4{
+    color: rgb(25, 209, 25);
+}
+
+
+.App2 .text h3{
+    color: rgb(24, 76, 219);
+}
+
+.App2 .text h4{
+    color: rgb(24, 76, 219);
+}
+
+.delall{
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.delall :hover{
+    
+
+}

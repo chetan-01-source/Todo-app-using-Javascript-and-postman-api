@@ -82,7 +82,7 @@ function Popup() {
               </form>
             </div>
             <div className="press1">
-              <div onClick={PostData}>Add</div>
+              <div onClick={PostData}>ADD</div>
             </div>
             <div className="remove" onClick={() =>setmodal(false)}>
               <img src="https://openclipart.org/image/2400px/svg_to_png/110/molumen-red-square-error-warning-icon.png" width={20} height={20}/>

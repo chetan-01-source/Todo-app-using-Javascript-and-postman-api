@@ -5,6 +5,7 @@ import { Modal, ModalHeader } from "reactstrap";
 import axios, { Axios } from "axios";
 import { Icon } from '@iconify/react';
 
+
 function Cards() {
   const [reducerValue, forceUpdate] = useReducer(x=>x+1, 0)
   const [modal, setmodal] = useState(false);
@@ -18,9 +19,39 @@ function Cards() {
   };
 
   const deleteUser =async(id,e)=>{
+    var a= window.confirm("do you want to delete?")
+    if(a){
+      e.preventDefault();
+      axios.delete(`http://localhost:5000/del/${id}`)
+      
+      forceUpdate()
+      alert("task has been deleted")
+    }
+    else
+    {
+        alert("task is not deleted")
+    }
+    
+      
+  };
+
+
+
+  const deleteall =async(e)=>{
     e.preventDefault();
-    axios.delete(`http://localhost:5000/del/${id}`)
-    .then(res=>console.log("Deleted"))
+    var a= window.confirm("do you want to delete all task?")
+    if(a){
+      
+      axios.delete(`http://localhost:5000/deleteall`)
+      
+      
+      alert("all task has been deleted")
+    }
+    else
+    {
+        alert("tasks are not deleted")
+    }
+    
       
   };
 
@@ -30,7 +61,9 @@ function Cards() {
 
   return (
     <>
-
+      <div className="delall" onClick={(e)=>deleteall(e)}>
+        <img src="https://th.bing.com/th/id/R.b24c367ab466572dc75ab3932d9ce027?rik=%2fRAf0dGufSeLWQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_216917.png&ehk=leDeLWBgXVjybVtLpkrqkAf0khmUNTEWSGcuSHUITdw%3d&risl=&pid=ImgRaw&r=0" width={30} height={40}/>
+      </div>
       <div className="App">
         {data.slice(0,3).map((item, index) => {
           return (
@@ -62,6 +95,7 @@ function Cards() {
                     <div className="ico">
                         <Icon   icon="solar:trash-bin-minimalistic-2-bold-duotone" height={20}  onClick={(e)=>deleteUser(item._id,e)}/>
                         </div>
+                        
                     
                     <div className="text1">
                       <h3>
@@ -94,6 +128,7 @@ function Cards() {
                   
                 </div>
               </div>
+
             </>
           );
         })}
@@ -105,7 +140,7 @@ function Cards() {
               <div className="card-container1">
                 <div className="image-container">
                   <img
-                    src="http://www.solidbackgrounds.com/images/1920x1080/1920x1080-red-solid-color-background.jpg"
+                    src="https://th.bing.com/th/id/R.fd8edc1870cad64610f0f4b86a45661c?rik=ORwJrgP2n5jBfQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2fa%2fc%2f108220.jpg&ehk=zWIXJPDWixXIdYIZCe4VHrV7SHwhBtDP0XrB61B7rlc%3d&risl=&pid=ImgRaw&r=0"
                     height={6}
                     width={303}
                     alt=""
@@ -137,7 +172,7 @@ function Cards() {
                         {console.log("data")}
                       </tr></h4>
                     </div>
-                    <div className="ico">
+                    <div className="ico1">
                         <Icon   icon="solar:trash-bin-minimalistic-2-bold-duotone" height={20}  onClick={(e)=>deleteUser(item._id,e)}/>
                         </div>
                     <div className="img1">
@@ -166,7 +201,7 @@ function Cards() {
               <div className="card-container2">
                 <div className="image-container">
                   <img
-                    src="http://www.solidbackgrounds.com/images/1920x1080/1920x1080-red-solid-color-background.jpg"
+                    src="https://th.bing.com/th/id/R.beb6bf36aff162ab4e29f256104f4d37?rik=AnGcRh6NlqP7oQ&riu=http%3a%2f%2fwww.solidbackgrounds.com%2fimages%2f2560x1440%2f2560x1440-blue-solid-color-background.jpg&ehk=Rp%2f%2bNgc%2bNmz6wu2OBYT%2bOL8TelrpeiXwbdO3hAzVDiQ%3d&risl=&pid=ImgRaw&r=0"
                     height={6}
                     width={303}
                     alt=""
