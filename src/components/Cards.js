@@ -59,10 +59,9 @@ function Cards() {
   }, [reducerValue]);
 
   return (
+    <div>
     <>
-      <div className="delall" onClick={(e)=>deleteall(e)}>
-        <img src="https://th.bing.com/th/id/R.b24c367ab466572dc75ab3932d9ce027?rik=%2fRAf0dGufSeLWQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_216917.png&ehk=leDeLWBgXVjybVtLpkrqkAf0khmUNTEWSGcuSHUITdw%3d&risl=&pid=ImgRaw&r=0" width={30} height={40}/>
-      </div>
+      
       <div className="App">
         {data.slice(0,3).map((item, index) => {
           return (
@@ -253,6 +252,10 @@ function Cards() {
         })}
       </div>
     </>
+    <div className="delall" onClick={(e)=>deleteall(e)}>
+    <img src="https://th.bing.com/th/id/R.b24c367ab466572dc75ab3932d9ce027?rik=%2fRAf0dGufSeLWQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_216917.png&ehk=leDeLWBgXVjybVtLpkrqkAf0khmUNTEWSGcuSHUITdw%3d&risl=&pid=ImgRaw&r=0" width={30} height={40}/>
+  </div>
+  </div>
   );
 
 }
